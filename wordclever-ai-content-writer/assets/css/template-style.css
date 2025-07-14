@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#wordclever-templates {
+    width: 90%;
+    margin: 0 auto;
+}
+.notice {
+    display: none;
+}
+#templates {
+    width: 100%;
+}
+#wordclever-templates .wordclever-templates-tabs-box .nav-tabs{
+    border-bottom: 0px;
+}
+#wordclever-templates .wordclever-templates-tabs-box .nav-tabs li{
+    margin: 0px;
+    padding: 5px 25px;
+}
+#wordclever-templates .wordclever-templates-tabs-box .nav-tabs .nav-link.active{
+    color: #6D51FB;
+    border-bottom: 2px solid #6D51FB;
+    border: none;
+    position: relative;
+}
+#wordclever-templates .wordclever-templates-tabs-box .nav-tabs .nav-link.active:after {
+    content: '';
+    border-bottom: 3px solid #6D51FB;
+    width: 60%;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap{
+    background: #6D51FB;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #00000047;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap .wordclever-user-profile{
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: fit-content;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap i{
+    font-size: 50px;
+    color: #6D51FB;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #6D51FB;
+    margin-top: -50%;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap ul{
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    padding-top: 12%;
+}
+.wordclever-dash-btn{
+    color: #fff;
+    text-decoration: none;
+    font: 300 13px / 14px poppins;
+    margin-left: 15px;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap li{
+    margin-bottom: 0px;
+}
+#wordclever-templates .wordclever-template-content-box .wordclever-login-registration-wrap li button{
+    background: transparent;
+    font: 400 16px / 20px poppins;
+    color: #fff !important;
+    border: none;
+    position: relative;
+    padding: 8px 8px;
+}
+#wordclever-templates .wordclever-template-content-box .wordclever-login-registration-wrap li button.active:after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    left: 0;
+    right: 0;
+    bottom : -1px;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap .tab-content label{
+    font: normal normal normal 14px / 25px poppins;
+    color: #fff;
+    display: flex;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap .tab-content form{
+    text-align: center;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap .tab-content button{
+    border: none;
+    font: 600 15px / 20px poppins;
+    color: #6D51FB;
+    background: #fff;
+    padding: 8px 35px;
+    border-radius: 6px;
+    margin-top: 10px !important;
+    margin: 0 auto;
+}
+.wordclever-template-content-box .wordclever-login-registration-wrap .tab-content{
+    padding-top: 2%;
+}
+#wordclever-templates .wordclever-template-content-box .wordclever-login-registration-wrap p{
+    color: #fff;
+    font: 300 11px / 20px poppins;
+    margin-top: 25px;
+    text-align: center;
+}
+#wordclever-templates .wordclever-template-content-box .wordclever-login-registration-wrap input[type=text],
+#wordclever-templates .wordclever-template-content-box .wordclever-login-registration-wrap input[type=password],
+#wordclever-templates .wordclever-template-content-box .wordclever-login-registration-wrap input[type=email] {
+    padding: 8px 20px;
+    background-color: #fff !important;
+    color: #7F7F7F !important;
+    font: 400 14px / 30px poppins;
+}
+#wordclever-templates .nav-tabs .nav-link{
+    font: 600 16px / 30px poppins;
+    color: #707070;
+    border: none;
+}
+#wordclever-templates .wordclever-templates-collections-tabs{
+    align-self: center;
+}
+a.forgot-pass:hover, .forgot-pass:active, .forgot-pass:focus {
+    color: #ffffff;
+    box-shadow: none;
+}
+.wordclever-user-name {
+    text-align: center;
+    font: normal normal bold 23px / 35px poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 1em;
+}
+.wordclever-user-card {
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    width: 90px;
+    border-radius: 8px;
+    height: 80px;
+    position: relative;
+}
+.wordclever-user-card h2{
+    font: 600 18px / 25px poppins;
+    margin: auto;
+}
+.wordclever-user-inner-card{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.wordclever-user-card h2 {
+    font: 500 16px / 25px poppins;
+    margin: auto;
+    color: #fff;
+}
+#wordclever-templates .wordclever-user-card-wrap .wordclever-user-card p {
+    font: 700 20px / 30px poppins;
+    margin: 0 !important;
+}
+.wordclever-user-card-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#wordclever-templates .wordclever-templates-tabs-box {
+    box-shadow: 0px 0px 10px 0px #00000047;
+    background: #ffffff;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.wordclever-steps-wrap{
+    box-shadow: 0px 0px 10px 0px #00000047;
+    padding: 20px 30px;
+    border-radius: 10px;
+    height: 450px;;
+}
+.wordclever-steps-wrap h2{
+    font: 600 18px / 30px poppins;
+    color: #707070;
+}
+.wordclever-steps-wrap p{
+    font: 400 14px / 15px poppins;
+    color: #707070;
+}
+.wordclever-step{
+    border: none;
+    box-shadow: 0px 0px 6px 0px #00000047;
+    font: 400 14px / 20px poppins;
+    color: #707070;
+}
+#wordclever-templates .wordclever-templates-collections-search .search-box input {
+    border: none;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #00000047;
+    background: #ffffff;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+#wordclever-templates .dashicons.dashicons-search {
+    align-self: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+}
+#wordclever-templates .dashicons-search:before {
+    color: #6D51FB;
+    font-size: 24px;
+}
+#wordclever-templates .wordclever-filter-categories-wrapper{
+    height: 435px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#wordclever-templates .wordclever-templates-grid-outer-box{
+    height: 740px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#wordclever-templates .wordclever-templates-grid-outer-box::-webkit-scrollbar,#wordclever-templates .wordclever-filter-categories-wrapper::-webkit-scrollbar {
+    display: none;
+}
+#wordclever-templates .wordclever-filter-categories-wrapper,
+#wordclever-templates .wordclever-template-banner-image {
+    background-color: #6D51FB;
+    border-radius: 5px;
+    padding: 20px;
+}
+#wordclever-templates .wordclever-bundle-buy-now {
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px #00000029;
+    width: fit-content;
+    margin: auto;
+}
+#wordclever-templates .wordclever-template-banner-para {
+    font: normal normal normal 14px / 20px poppins;
+    letter-spacing: 0px;
+    color: #F3F3F3;
+    margin: 0;
+    width: 90%;
+    margin: auto;
+}
+#wordclever-templates .wordclever-templates-collections-group {
+    padding-left: 1rem;
+}
+#wordclever-templates .wordclever-template-banner-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding-top: 35%;
+}
+#wordclever-templates .wordclever-filter-category-select-content,
+#wordclever-templates .wordclever-template-banner-heading {
+    font: normal normal bold 26px / 30px poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+#wordclever-templates .wordclever-collection-name {
+    display: flex;
+    justify-content: space-between;
+    font: normal normal 600 18px / 25px poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0;
+}
+#wordclever-templates .wordclever-collection-count {
+    font: normal normal 600 14px / 44px poppins;
+    letter-spacing: 0px;
+    color: #6D51FB;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+}
+#wordclever-templates .wordclever-collection-name:hover, #wordclever-templates .wordclever-collection-name.active {
+    color: #FCA05C;
+    padding-left: 10px;
+}
+#wordclever-templates .wordclever-collection-name:hover .wordclever-collection-count, #wordclever-templates .wordclever-collection-name.active .wordclever-collection-count {
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    color: #ffffff;
+}
+#wordclever-templates .wordclever-template-banner-image img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+}
+#wordclever-templates .wordclever-templates-grid.wordclever-main-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px 0px;
+    margin-top: 20px;
+}
+#wordclever-templates .wordclever-templates-grid.wordclever-main-grid .wordclever-grid-item {
+    width: 262px;
+    margin-left: 15px;
+}
+#wordclever-templates .wordclever-grid-item:hover .wordclever-image-box img {
+    margin-top: -30px;
+}
+#wordclever-templates .wordclever-image-box {
+    width: 100%;
+    height: 300px;
+}
+#wordclever-templates .wordclever-image-wrap {
+    background: #fff;
+    box-shadow: 0px 0px 6px 0px #00000047;
+    padding: 15px;
+    border-radius: 5px;
+}
+#wordclever-templates .wordclever-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 0px 6px 0px #00000029;
+    border-radius: 5px;
+    transition: all .4s linear;
+}
+#wordclever-templates .wordclever-templates-grid.wordclever-main-grid .wordclever-demo-url.wordclever-btn {
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px #00000029;
+    position: relative;
+    top: -15px;
+}
+#wordclever-templates .wordclever-image-overlay {
+    text-align: center;
+}
+#wordclever-templates .wordclever-grid-item h3 {
+    font: normal normal 600 18px / 25px poppins, Outfit;
+    color: #707070;
+    padding: 0px 8px;
+    height: 50px;
+}
+#wordclever-templates .wordclever-buy-now.wordclever-btn {
+    background: #6D51FB;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    font: normal normal 600 14px / 19px poppins, Outfit;
+}
+#wordclever-templates .wordclever-price-box {
+    font: normal normal normal 13px / 17px poppins;
+    color: #707070;
+    text-align: start;
+}
+#wordclever-templates .wordclever-price {
+    font: normal normal bold 16px / 21px poppins;
+    letter-spacing: 0px;
+    color: #707070;
+}
+#wordclever-templates .wordclever-load-more {
+    background: #6D51FB;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    font: normal normal 600 14px / 19px poppins, Outfit;
+}
+#nav-tabContent #dashboard.active, #nav-tabContent #license.active {
+    width: 100%;
+    display: flex;
+}
+.wordclever-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+.wordclever-steps::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 18px;
+    width: 2px;
+    height: 86%;
+    background: #6D51FB;
+    border-radius: 2px;
+}
+.wordclever-step {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.wordclever-step::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #6D51FB;
+    border-radius: 50%;
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#wordclever-templates .wordclever-bundle-banner-wrap img{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+}
+.wordclever-bundle-banner-wrap{
+    background-color: #6D51FB;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    height: 450px;
+}
+.wordclever-bundle-banner-wrap h2{
+    font: normal normal bold 23px / 35px poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.wordclever-bundle-banner-wrap p{
+    font: normal normal normal 14px / 20px poppins;
+    letter-spacing: 0px;
+    color: #F3F3F3;
+    margin: 0;
+    margin: auto;
+}
+.wordclever-bundle-banner-wrap-content-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    padding-top: 35%;
+}
+.wordclever-bundle-banner-wrap-content-box a.bundle-buy-now{
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 35px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px #00000029;
+    width: fit-content;
+    margin: auto;
+}
+.wordclever-bundle-banner-wrap-content-box .website-link{
+    color: #fff;
+    font: 300 14px / 15px poppins;
+    text-align: center;
+    text-decoration: none;
+}
+.wordclever-bundle-banner-wrap-content-box .discount {
+    font: 600 35px / 35px poppins;
+    color: #fff;
+    margin: auto;
+    display: flex;
+}
+.wordclever-bundle-banner-wrap-content-box .discount span{
+    font: 600 14px / 14px poppins;
+    align-self: center;
+}
+.wordclever-bundle-banner-wrap-content-box .countdown{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+.wordclever-bundle-banner-wrap-content-box span.numbers {
+    display: block;
+    font: 600 30px/15px poppins;
+}
+.wordclever-bundle-banner-wrap-content-box span.numbers .nofont{
+    font: 400 13px/13px poppins;
+}
+.wordclever-bundle-banner-wrap-content-box .wordclever-colon-box{
+    font-size: 32px;
+    width: 8px;
+    height: 22px;
+    bottom: 12px;
+    position: relative;
+}
+
+/* licence */
+.wordclever-license-activation-wrap{
+    background: #6D51FB;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #00000047;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wordclever-license-activation-wrap h2{
+    font: 600 20px / 30px poppins;
+    color: #fff;
+}
+.wordclever-license-activation-status span{
+    font: 600 18px / 25px poppins;
+}
+.wordclever-license-no-activation-status{
+    font: 300 16px / 16px poppins;
+    position: relative;
+}
+span.wordclever-license-no-activation-status:after {
+    content: '';
+    background: red;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    align-self: center;
+    top: 0;
+    bottom: 0;
+}
+span.wordclever-license-active {
+    color: #4CAF50;
+    position: relative;
+}
+span.wordclever-license-active::after {
+    background: #4CAF50;
+    content: '';
+    border: 1px solid #fff;
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    align-self: center;
+    top: 0;
+    bottom: 0;
+}
+.wordclever-license-activation-wrap p{
+    font: 300 14px / 16px poppins;
+    margin-bottom: 15px;
+}
+.wordclever-license-activation-text{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+}
+.licence-check-btn .btn{
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 35px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px #00000029;
+}
+.licence-check-btn .btn:hover {
+    color: #fff;
+}
+.wordclever-license-activation-wrap .licence-check-btn p {
+    font: 300 14px / 16px poppins;
+    margin-bottom: 0px;
+}
+.wordclever-license-activation-wrap input[name="wordclever-license-activation-text"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* support */
+.wordclever-support-left-card{
+    background: #6D51FB;
+    padding: 40px 35px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #00000047;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.wordclever-support-right-card{
+    background: #6D51FB;
+    padding: 40px 35px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #00000047;
+    color: #fff;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.wordclever-support-right-card p {
+    width: 54%;
+}
+.wordclever-support-wrap h2,.wordcleaver-plans-outer-main-box h2{
+    font: 600 20px / 30px poppins;
+    color: #707070;
+}
+.wordclever-support-wrap .wordclever-support-wrap-para,.wordcleaver-plans-outer-main-box p{
+    font: 400 15px / 20px poppins;
+    width: 75%;
+    color: #707070;
+}
+a.wordclever-support-btn,.wordclever-support-right-card .wordclever-dash-btn,a.plan-card-upgrade-btn {
+    background-image: linear-gradient(90deg, #EF7315, #FEA664);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 35px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px #00000029;
+    width: fit-content;
+    margin: auto;
+    border: none;
+}
+.wordclever-support-right-card .wordclever-dash-btn{
+    padding: 10px 20px;
+    border: none;
+    font: 400 16px / 18px poppins;
+}
+.wordclever-support-right-card input[type=text],.wordclever-support-right-card input[type=email],.wordclever-support-right-card textarea{
+    padding: 8px 20px;
+}
+/* plans */
+.plan-card-wrap {
+    justify-content: space-between;
+}
+.plan-card-card-outer-box {
+    width: 335px;
+}
+.plan-card.card {
+    box-shadow: 0px 0px 10px 0px #00000047;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    height: 100%;
+}
+.plan-content-card-box{
+    padding: 30px 30px;
+    color: #707070;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.plan-card-card-outer-box:hover .plan-content-card-box {
+    padding: 30px 30px;
+    color: #fff;
+    background: #6D51FB;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.plan-card-card-outer-box:hover .plan-content-card-box svg path {
+    fill: #fff;
+}
+.plan-card-card-outer-box:hover .plan-card-title {
+    background: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+.plan-card-card-outer-box:hover .plan-card-title h2, .plan-card-card-outer-box:hover .plan-card-title h3{
+    color: #6D51FB;
+}
+.plan-card-fields{
+    text-align: start;
+    padding: 0;
+}
+.plan-card-title {
+    padding: 30px 40px;
+    background: #6D51FB;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 10px 0px #00000047;
+}
+.plan-card-title h2 {
+    font: 700 35px / 30px poppins;
+    margin-bottom: 25px;
+}
+.plan-card-title h3{
+    font: 500 25px / 30px poppins;
+    margin: 0;
+}
+.plan-card-title h2,.plan-card-title h3{
+    color: #fff;
+}
+a.plan-card-upgrade-btn {
+    padding: 8px 50px;
+    margin: 0 auto;
+}
+
+/* Plan Card Styles */
+.plan-card.current-plan {
+    border: 2px solid #EF7315;
+    position: relative;
+    box-shadow: 0 0 10px rgba(239, 115, 21, 0.2);
+}
+
+.current-plan-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: linear-gradient(90deg, #EF7315, #FEA664);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.plan-card-current-btn {
+    background: linear-gradient(90deg, #EF7315, #FEA664);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.plan-card-upgrade-btn {
+    background: linear-gradient(90deg, #EF7315, #FEA664);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.plan-card-upgrade-btn:hover, a.wordclever-bundle-buy-now:hover, a.wordclever-demo-url.wordclever-btn:hover, a.wordclever-support-btn:hover, 
+.wordclever-dash-btn.wordclever-support-btn:hover {
+    background: linear-gradient(90deg, #FEA664, #EF7315) !important;
+    color: white;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1251px){
+    #wordclever-templates .wordclever-templates-tabs-box .nav-tabs li {
+        margin: 0px;
+        padding: 5px 16px;
+    }
+    .wordclever-bundle-banner-wrap-content-box span.numbers {
+        display: block;
+        font: 600 25px / 15px poppins;
+    }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1200px) {
+    #wordclever-templates .wordclever-templates-grid.wordclever-main-grid .wordclever-grid-item {
+        width: 220px;
+    }
+    #wordclever-templates .wordclever-grid-item h3 {
+        padding: 0px;
+    }
+    #wordclever-templates .wordclever-filter-category-select-content,
+    #wordclever-templates .wordclever-template-banner-heading {
+        font: normal normal bold 21px / 26px poppins;
+    }
+    #wordclever-templates .wordclever-bundle-buy-now {
+        padding: 10px 22px;
+    }
+    #wordclever-templates .wordclever-collection-name {
+        font: normal normal 600 16px / 20px poppins;
+    }
+    #wordclever-templates .wordclever-templates-collections-group,
+    #wordclever-templates .wordclever-collection-name:hover {
+        padding-left: 0rem;
+    }
+
+    .plan-content-card-box {
+        padding: 25px 20px;
+    }
+    .plan-card-title {
+        padding: 25px 25px;
+    }
+    .plan-card-card-outer-box {
+        width: 246px;
+    }
+    #wordclever-templates .nav-tabs .nav-link {
+        font: 600 13px / 30px poppins;
+        padding: 8px 8px;
+    }
+    #wordclever-templates .wordclever-templates-tabs-box .nav-tabs li{
+        padding: 5px 0px;
+    }
+    a.wordclever-support-btn{
+        padding: 8px 25px;
+    }
+    .wordclever-license-activation-wrap .licence-check-btn p {
+        font: 300 13px / 16px poppins;
+    }
+    .wordclever-bundle-banner-wrap-content-box span.numbers {
+        display: block;
+        font: 600 25px / 15px poppins;
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    #wordclever-templates .wordclever-templates-grid.wordclever-main-grid .wordclever-grid-item {
+        width: 235px;
+    }
+    #wordclever-templates .wordclever-bundle-buy-now {
+        padding: 10px 25px;
+    }
+    #wordclever-templates .wordclever-filter-category-select-content,
+    #wordclever-templates .wordclever-template-banner-heading {
+        font: normal normal bold 20px / 24px poppins;
+    }
+    #wordclever-templates .wordclever-collection-name {
+        font: normal normal 600 16px / 20px poppins;
+    }
+    #wordclever-templates .wordclever-templates-collections-group,
+    #wordclever-templates .wordclever-collection-name:hover {
+        padding-left: 0rem;
+    }
+    .plan-content-card-box {
+        padding: 25px 20px;
+    }
+    .plan-card-title {
+        padding: 25px 25px;
+    }
+    .plan-card-card-outer-box {
+        width: 246px;
+    }
+    #wordclever-templates .nav-tabs .nav-link {
+        font: 600 13px / 30px poppins;
+        padding: 8px 8px;
+    }
+    #wordclever-templates .wordclever-templates-tabs-box .nav-tabs li{
+        padding: 5px 0px;
+    }
+    a.wordclever-support-btn{
+        padding: 8px 30px;
+    }
+    .wordclever-license-activation-wrap .licence-check-btn p {
+        font: 300 13px / 16px poppins;
+    }
+    .wordclever-bundle-banner-wrap-content-box span.numbers {
+        display: block;
+        font: 600 25px / 15px poppins;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    #wordclever-templates .nav-tabs .nav-link {
+        font: 600 13px / 30px poppins;
+        padding: 0px 4px;
+    }
+    #wordclever-templates .wordclever-templates-tabs-box .nav-tabs li{
+        padding: 5px 0px;
+    }
+    .wordclever-bundle-banner-wrap-content-box span.numbers{
+        font: 600 22px / 15px poppins;
+    }
+    .wordclever-license-activation-status span {
+        font: 600 16px / 25px poppins;
+    }
+    a.wordclever-support-btn, .wordclever-support-right-card .wordclever-dash-btn, a.plan-card-upgrade-btn{
+        padding: 8px 30px;
+    }
+    #wordclever-templates .wordclever-filter-category-select-content, #wordclever-templates .wordclever-template-banner-heading {
+        font: normal normal bold 21px / 30px poppins;
+    }
+    .wordclever-support-right-card p{
+        width: 80%;
+    }
+    .wordclever-bundle-banner-wrap-content-box .wordclever-colon-box {
+        font-size: 25px;
+        bottom: 6px;
+    }
+}
+
+@media screen and (min-width: 1921px) { 
+    .wordclever-support-wrap .wordclever-support-left-card {
+        gap: 24px;
+    }
+}
