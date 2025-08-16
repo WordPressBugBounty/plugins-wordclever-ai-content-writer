@@ -113,7 +113,8 @@ jQuery(document).ready(function($) {
         $('#wordclever-login-form').show();
     });
 
-    $('#wordclever-popup-close').on('click', function() {
+    $('#wordclever-popup-close').on('click', function(e) {
+         e.preventDefault();
         $('#wordclever-popup').addClass('hidden');
     });
 });

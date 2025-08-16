@@ -144,9 +144,9 @@ class WordClever_MetaBox {
                     <!-- Login Form -->
                     <div id="wordclever-login-form">
                         <h2><?php esc_html_e('Login', 'wordclever-ai-content-writer'); ?></h2>
-                        <input type="text" id="wordclever-login-username" placeholder="<?php esc_html_e('Username', 'wordclever-ai-content-writer'); ?>" required>
+                        <input type="text" id="wordclever-login-username" placeholder="<?php esc_html_e('Username', 'wordclever-ai-content-writer'); ?>">
                         <div style="position: relative;">
-                            <input type="password" id="wordclever-login-password" placeholder="<?php esc_html_e('Password', 'wordclever-ai-content-writer'); ?>" required minlength="6">
+                            <input type="password" id="wordclever-login-password" placeholder="<?php esc_html_e('Password', 'wordclever-ai-content-writer'); ?>"  >
                             <span id="toggle-login-password" class="dashicons dashicons-visibility" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"></span>
                         </div>
                         <!-- Professional Text Below Password Field -->
@@ -163,21 +163,26 @@ class WordClever_MetaBox {
                     <!-- Register Form -->
                     <div id="wordclever-register-form" class="hidden">
                         <h2><?php esc_html_e('Register', 'wordclever-ai-content-writer'); ?></h2>
-                        <input type="text" id="wordclever-register-username" placeholder="<?php esc_html_e('Username', 'wordclever-ai-content-writer'); ?>" required>
-                        <input type="email" id="wordclever-register-email" placeholder="<?php esc_html_e('Email', 'wordclever-ai-content-writer'); ?>" required>
+                        <input type="text" id="wordclever-register-username" placeholder="<?php esc_html_e('Username', 'wordclever-ai-content-writer'); ?>" >
+                        <input type="email" id="wordclever-register-email" placeholder="<?php esc_html_e('Email', 'wordclever-ai-content-writer'); ?>" >
                         <div style="position: relative;">
-                            <input type="password" id="wordclever-register-password" placeholder="<?php esc_html_e('Password', 'wordclever-ai-content-writer'); ?>" required minlength="6">
+                            <input type="password" id="wordclever-register-password" placeholder="<?php esc_html_e('Password', 'wordclever-ai-content-writer'); ?>"  >
                             <span id="toggle-register-password" class="dashicons dashicons-visibility" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"></span>
                         </div>
                         <button id="wordclever-register-submit"><?php esc_html_e('Register', 'wordclever-ai-content-writer'); ?></button>
                         <p><button type="button" id="wordclever-toggle-login"><?php esc_html_e('Back to Login', 'wordclever-ai-content-writer'); ?></button></p>
                     </div>
 
-                    <button id="wordclever-popup-close" aria-label="<?php esc_html_e('Close', 'wordclever-ai-content-writer'); ?>" style="background: none; border: none; cursor: pointer;">
+                    <button type="button"  id="wordclever-popup-close" aria-label="<?php esc_html_e('Close', 'wordclever-ai-content-writer'); ?>" style="background: none; border: none; cursor: pointer;">
                         <span class="dashicons dashicons-no-alt"></span>
                     </button>
+
+
+                              
                 </div>
             </div>
+
+
         </div>
 
         <?php if (empty($current_user)): ?>
