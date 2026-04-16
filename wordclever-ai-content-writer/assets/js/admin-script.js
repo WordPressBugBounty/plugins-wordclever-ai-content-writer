@@ -332,3 +332,39 @@ jQuery(document).ready(function ($) {
 });
 
 
+// installer js 
+jQuery(document).ready(function ($) {
+
+    $(document).on('click', '.wordclever-install-btn', function () {
+
+        var button = $(this);
+
+        button.text('Installing...').prop('disabled', true);
+
+        $.ajax({
+            url: wordclever_data.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'wordclever_install_plugin',
+                nonce: wordclever_data.nonce
+            },
+            success: function (response) {
+
+                if (response.success) {
+
+                    button.text('Redirecting...');
+                    window.location.href = wordclever_data.redirect_url;
+
+                } else {
+                    button.text('Failed! Try Again').prop('disabled', false);
+                    alert(response.data || 'Something went wrong');
+                }
+            },
+            error: function () {
+                button.text('Error! Try Again').prop('disabled', false);
+            }
+        });
+
+    });
+
+});

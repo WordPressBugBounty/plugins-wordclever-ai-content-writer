@@ -109,7 +109,7 @@
     height: 100%;
 }
 
-.wordclever-login-button-parent-box button{
+.wordclever-login-button-parent-box button {
     background-color: #0073aa;
     color: #fff;
     border: none;
@@ -130,16 +130,18 @@
     z-index: 1;
 }
 
-.wordclever-login-button-parent-box{
+.wordclever-login-button-parent-box {
     display: none;
 }
 
 #wordclever-ai-box:hover .wordclever-login-button-parent-box {
     display: block;
 }
-#wordclever-ai-box{
+
+#wordclever-ai-box {
     position: relative;
 }
+
 .wordclever-login-button-parent-box {
     position: absolute;
     background-color: #0000005e;
@@ -164,7 +166,8 @@ button#wordclever-popup-close {
     margin: 0;
     z-index: 99;
 }
-button#wordclever-popup-close i{
+
+button#wordclever-popup-close i {
     font-family: 'font-awesome';
     background: red;
     width: 30px;
@@ -229,7 +232,8 @@ button#wordclever-popup-close i{
 }
 
 #wordclever-help ol li::marker {
-    color: #0073e6; /* Custom bullet color */
+    color: #0073e6;
+    /* Custom bullet color */
 }
 
 #wordclever-help p:last-of-type {
@@ -239,7 +243,7 @@ button#wordclever-popup-close i{
 }
 
 /* Add spacing between the list and other text */
-#wordclever-help ol + p {
+#wordclever-help ol+p {
     margin-top: 20px;
 }
 
@@ -249,94 +253,107 @@ button#wordclever-popup-close i{
 #wordclever-login-form button,
 #wordclever-register-form button {
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
-#wordclever-login-submit, 
-#wordclever-toggle-register, 
-#wordclever-register-submit, 
+#wordclever-login-submit,
+#wordclever-toggle-register,
+#wordclever-register-submit,
 #wordclever-toggle-login {
-    width: auto; 
-    padding: 10px 20px; 
+    width: auto;
+    padding: 10px 20px;
 }
 
 #wordclever-login-form p,
 #wordclever-register-form p {
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .wordclever-popup-content {
     text-align: center;
 }
+
 .wordclever-upsell-banner {
     padding: unset !important;
     border: unset !important;
 }
-.wordclever-upsell-banner .notice-dismiss,.wordclever-upsell-banner .notice-dismiss:before{
+
+.wordclever-upsell-banner .notice-dismiss,
+.wordclever-upsell-banner .notice-dismiss:before {
     color: #fff;
 }
+
 .wordclever-upsell-banner #wordclever-banner-main {
     background-color: #6D51FB;
 }
-.wordclever-upsell-banner .wordclever-banner-main-wrap{
+
+.wordclever-upsell-banner .wordclever-banner-main-wrap {
     grid-template-columns: 25% 50% 25%;
     display: grid;
 }
-.wordclever-upsell-banner .wordclever-banner-content{
+
+.wordclever-upsell-banner .wordclever-banner-content {
     display: flex;
-    flex-direction:column;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     gap: 25px;
 }
-.wordclever-upsell-banner .wordclever-banner-content h2{
+
+.wordclever-upsell-banner .wordclever-banner-content h2 {
     font: normal normal bold 65px / 50px Segoe UI;
     letter-spacing: 0px;
     color: #FFFFFF;
     margin: 0;
-    text-align:center;
+    text-align: center;
 }
-.wordclever-upsell-banner .wordclever-banner-content p{
+
+.wordclever-upsell-banner .wordclever-banner-content p {
     font: normal normal normal 23px / 25px Segoe UI;
     letter-spacing: 0px;
     color: #F3F3F3;
-    text-align:center;
-    padding:0;
-    margin:0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
-.wordclever-upsell-banner.notice{
+
+.wordclever-upsell-banner.notice {
     padding: 0;
     padding-right: 0 !important;
 }
-.wordclever-upsell-banner .wordclever-disocunt-wrap{
+
+.wordclever-upsell-banner .wordclever-disocunt-wrap {
     background: #FFFFFF;
     width: max-content;
     padding: 10px;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
     border-radius: 5px;
 }
-.wordclever-upsell-banner .wordclever-disocunt-wrap h6{
+
+.wordclever-upsell-banner .wordclever-disocunt-wrap h6 {
     margin: 0;
     font: normal normal bold 16px / 30px Segoe UI;
     letter-spacing: 0px;
     color: #6D51FB;
 }
 
-.wordclever-upsell-banner .wordclever-banner-btn-content{
+.wordclever-upsell-banner .wordclever-banner-btn-content {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
-.wordclever-upsell-banner .wordclever-disocunt-wrap h4{
+
+.wordclever-upsell-banner .wordclever-disocunt-wrap h4 {
     margin: 0;
     font: normal normal bold 35px / 38px Segoe UI;
     letter-spacing: 0px;
     color: #6D51FB;
 }
-.wordclever-upsell-banner .wordclever-bundlle-btn{
+
+.wordclever-upsell-banner .wordclever-bundlle-btn {
     background: transparent linear-gradient(90deg, #EF7315 0%, #FEA664 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 5px;
@@ -349,9 +366,11 @@ button#wordclever-popup-close i{
     letter-spacing: 0px;
     color: #FFFFFF;
 }
-.wordclever-upsell-banner .wordclever-banner-img img{
+
+.wordclever-upsell-banner .wordclever-banner-img img {
     margin-left: 15px;
 }
+
 #wordclever-request-info .plan-card-upgrade-btn {
     background-color: #0073aa;
     color: #fff;
@@ -363,37 +382,95 @@ button#wordclever-popup-close i{
     transition: background 0.3s;
     text-decoration: none;
 }
+
 @media screen and (max-width: 1600px) {
-    .wordclever-upsell-banner .wordclever-banner-content h2{
+    .wordclever-upsell-banner .wordclever-banner-content h2 {
         font: normal normal bold 50px / 50px Segoe UI;
     }
 }
+
 @media screen and (max-width: 1024px) {
-    .wordclever-upsell-banner .wordclever-banner-main-wrap{
+    .wordclever-upsell-banner .wordclever-banner-main-wrap {
         align-items: center;
     }
+
     .wordclever-upsell-banner .wordclever-banner-content h2 {
         font: normal normal bold 35px / 36px Segoe UI;
     }
-    .wordclever-upsell-banner .wordclever-banner-content p{
+
+    .wordclever-upsell-banner .wordclever-banner-content p {
         font: normal normal normal 18px / 25px Segoe UI;
         padding: 0;
         margin: 0;
     }
 }
+
 @media screen and (max-width: 767px) {
-    .wordclever-upsell-banner .wordclever-banner-main-wrap{
+    .wordclever-upsell-banner .wordclever-banner-main-wrap {
         display: flex;
-        flex-direction:column;
-        gap:20px
+        flex-direction: column;
+        gap: 20px
     }
+
     .wordclever-upsell-banner .wordclever-banner-content h2 {
         font: normal normal bold 50px / 50px Segoe UI;
     }
+
     .wordclever-upsell-banner .wordclever-banner-content p {
         font: normal normal normal 20px / 25px Segoe UI;
     }
-    .wordclever-upsell-banner .wordclever-banner-img{
-        text-align:center
+
+    .wordclever-upsell-banner .wordclever-banner-img {
+        text-align: center
     }
+}
+
+/* for woocommerce install notice  */
+
+/* WordClever WooCommerce Notice */
+.wordclever-notice {
+    display: flex;
+    align-items: flex-start;
+    border-left: 4px solid #6D51FB;
+    background-color: #fff6f6;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wordclever-notice-icon {
+    margin-right: 15px;
+    font-size: 32px;
+    color: #6D51FB;
+}
+
+.wordclever-notice-content h2 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #6D51FB;
+}
+
+.wordclever-notice-content p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.wordclever-btn {
+    display: inline-block;
+    background-color: #6D51FB;
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.wordclever-btn:hover {
+    background-color: #d10000;
 }
