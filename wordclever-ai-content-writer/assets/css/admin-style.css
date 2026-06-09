@@ -11,6 +11,17 @@
     z-index: 1000;
 }
 
+.wordclever_page_wordclever-help .notice {
+    display: none;
+}
+
+#toplevel_page_wordclever-templates, #toplevel_page_wordclever-templates .wp-menu-open {
+    background: #6D51FB !important;
+}
+#toplevel_page_wordclever-templates .wp-menu-name {
+    font-weight: 900;
+}
+
 .wordclever-popup.hidden {
     display: none;
 }
@@ -197,7 +208,7 @@ button#wordclever-popup-close i {
 /* new */
 #wordclever-help {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -224,6 +235,7 @@ button#wordclever-popup-close i {
     padding-left: 20px;
     font-size: 1rem;
     color: #555;
+    margin-left: unset;
 }
 
 #wordclever-help li {
@@ -472,5 +484,5 @@ button#wordclever-popup-close i {
 }
 
 .wordclever-btn:hover {
-    background-color: #d10000;
+    background-color: #6D51FB;
 }

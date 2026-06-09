@@ -3,7 +3,7 @@
  * Plugin Name:         WordClever - AI Content Writer
  * Plugin URI:          https://www.wpradiant.net/products/wordclever-pro
  * Description:         WordClever AI Content Writer generates SEO-friendly product descriptions, meta titles, and more for WooCommerce with just a few clicks.
- * Version:             1.0.9
+ * Version:             1.1.0
  * Requires at least:   5.2
  * Requires PHP:        7.4
  * Author:              wpradiant
@@ -42,7 +42,7 @@ class WordClever
 
     private function define_constants()
     {
-        define('WORDCLEVER_VERSION', '1.0.9');
+        define('WORDCLEVER_VERSION', '1.1.0');
         define('WORDCLEVER_PATH', plugin_dir_path(__FILE__));
         define('WORDCLEVER_URL', plugin_dir_url(__FILE__));
     }

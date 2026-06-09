@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 .notice {
-    display: none;
+    display: none !important;
 }
 #templates {
     width: 100%;
