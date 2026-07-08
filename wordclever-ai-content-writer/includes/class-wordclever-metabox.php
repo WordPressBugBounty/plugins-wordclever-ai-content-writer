@@ -282,8 +282,8 @@ class WordClever_MetaBox
             wp_send_json_error(['message' => __('User is not logged in. Please log in to generate content.', 'wordclever-ai-content-writer')]);
         }
 
-        $request_count = get_option('wordclever_request_count' . $current_user_id, 0);
-        $used_request = get_option('wordclever_used_request' . $current_user_id, 0);
+        $request_count = get_option('wordclever_request_count', 0);
+        $used_request = get_option('wordclever_used_request', 0);
 
         // Only check request limit if request_count is not 0 (unlimited)
         if ($request_count > 0 && $used_request >= $request_count) {
@@ -294,7 +294,7 @@ class WordClever_MetaBox
         $keyword = sanitize_text_field(wp_unslash($_POST['keyword'] ?? ''));
         $tone = sanitize_text_field(wp_unslash($_POST['tone'] ?? ''));
         $resp_count = intval($_POST['resp_count'] ?? 1);
-        $license_key = sanitize_text_field(wp_unslash($_POST['license_key'] ?? ''));
+        $license_key = get_option('wordclever_license_key', '');
 
         if (empty($content_type) || empty($keyword) || empty($tone) || $resp_count < 1) {
             wp_send_json_error(['message' => __('All fields are required.', 'wordclever-ai-content-writer')]);
@@ -922,6 +922,7 @@ class WordClever_MetaBox
                             $premium_plan_arr = wordclever_get_premium_plans();
                             $current_plan = get_option('wordclever_current_plan');
                             $current_plan_name = isset($current_plan['plan_name']) ? $current_plan['plan_name'] : '';
+                            $checked_icon = file_get_contents(WORDCLEVER_PATH . 'assets/images/checked-icon.svg');
 
                             foreach ($premium_plan_arr as $plan) {
 
@@ -947,8 +948,6 @@ class WordClever_MetaBox
                                                     <li>
                                                         <span class="pe-3">
                                                             <?php
-
-                                                            $checked_icon = file_get_contents(WORDCLEVER_URL . 'assets/images/checked-icon.svg');
                                                             // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Outputting trusted local SVG file.
                                                             echo $checked_icon;
                                                             ?>

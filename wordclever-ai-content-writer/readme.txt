@@ -2,7 +2,7 @@
 Contributors: wpradiant
 Tags: AI-Powered Writing, Content Automation, AI Tool, Product Descriptions
 Tested up to: 6.8
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,8 +38,8 @@ Transform your WooCommerce store with AI-driven content that saves time, improve
 **Technical Specifications**
 
 * **WordPress Version:** 5.2 or higher
-* **Tested Up To:** WordPress 6.6.1
-* **PHP Version:** 7.2 or higher
+* **Tested Up To:** WordPress 6.8
+* **PHP Version:** 7.4 or higher
 
 = Sweetalert2  =
 
@@ -62,6 +62,12 @@ WordClever AI Content Writer plugin uses external services for user authenticati
 This service is provided by "WP Radiant": [terms of use](https://www.wpradiant.net/pages/wordclever-terms-of-use), [privacy policy](https://www.wpradiant.net/pages/wordclever-privacy-policy).
 
 == Changelog ==
+
+= 1.1.1 - 2026-07-08 =
+* Fixed PHP warning caused by an undefined variable in the content generation request handler.
+* Improved performance of the premium plans tab by reading the plan-feature icon from disk once instead of fetching it over HTTP for every field.
+* Hardened the content generation request to use the stored license key instead of a client-submitted value.
+* Synced tested-up-to WordPress version and minimum PHP version across plugin metadata.
 
 = 1.1.0 - 2026-06-08 =
 * Minor CSS Fixes.
