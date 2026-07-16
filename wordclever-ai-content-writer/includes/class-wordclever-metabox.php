@@ -1013,6 +1013,12 @@ class WordClever_MetaBox
             return;
         }
 
+        // Throttle the remote license check so it doesn't run on every admin page load.
+        if (get_transient('wordclever_license_check_lock')) {
+            return;
+        }
+        set_transient('wordclever_license_check_lock', 1, 15 * MINUTE_IN_SECONDS);
+
         $license_key = get_option('wordclever_license_key');
         if (empty($license_key)) {
             update_option('wordclever_license_status', 'invalid');
@@ -1068,6 +1074,12 @@ class WordClever_MetaBox
         if (empty($current_user)) {
             return;
         }
+
+        // Throttle the remote usage check so it doesn't run on every admin page load.
+        if (get_transient('wordclever_usage_check_lock')) {
+            return;
+        }
+        set_transient('wordclever_usage_check_lock', 1, 15 * MINUTE_IN_SECONDS);
 
         // Make an AJAX call to update used requests
         $response = WordClever_API_Handler::get_user_data_by_username($current_user);

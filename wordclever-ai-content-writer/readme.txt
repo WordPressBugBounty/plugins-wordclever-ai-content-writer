@@ -2,7 +2,7 @@
 Contributors: wpradiant
 Tags: AI-Powered Writing, Content Automation, AI Tool, Product Descriptions
 Tested up to: 6.8
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,9 @@ WordClever AI Content Writer plugin uses external services for user authenticati
 This service is provided by "WP Radiant": [terms of use](https://www.wpradiant.net/pages/wordclever-terms-of-use), [privacy policy](https://www.wpradiant.net/pages/wordclever-privacy-policy).
 
 == Changelog ==
+
+= 1.1.2 - 2026-07-16 =
+* Throttled the license and usage sync checks that ran on every wp-admin page load to once every 15 minutes, reducing unnecessary outbound API requests and speeding up admin page loads.
 
 = 1.1.1 - 2026-07-08 =
 * Fixed PHP warning caused by an undefined variable in the content generation request handler.
