@@ -161,6 +161,8 @@ jQuery(document).ready(function($) {
 
         jQuery('.wordclever-templates-collections-group').removeClass('active');
 
+        $('#templates-tab').trigger('click');
+
         productsAjax( '', '', category, 'category' );
     });
 

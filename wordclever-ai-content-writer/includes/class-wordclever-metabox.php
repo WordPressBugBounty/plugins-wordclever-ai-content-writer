@@ -476,9 +476,9 @@ class WordClever_MetaBox
                 <div class="col-xxl-9 col-xl-8 col-lg-8 col-md-8 wordclever-templates-collections-tabs">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard"
+                            <button class="nav-link" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard"
                                 type="button" role="tab" aria-controls="dashboard"
-                                aria-selected="true"><?php echo esc_html('Dashboard'); ?></button>
+                                aria-selected="false"><?php echo esc_html('Dashboard'); ?></button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="license-tab" data-bs-toggle="tab" data-bs-target="#license"
@@ -486,9 +486,9 @@ class WordClever_MetaBox
                                 aria-selected="false"><?php echo esc_html('License'); ?></button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="templates-tab" data-bs-toggle="tab" data-bs-target="#templates"
+                            <button class="nav-link active" id="templates-tab" data-bs-toggle="tab" data-bs-target="#templates"
                                 type="button" role="tab" aria-controls="templates"
-                                aria-selected="false"><?php echo esc_html('Templates'); ?></button>
+                                aria-selected="true"><?php echo esc_html('Templates'); ?></button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="support-tab" data-bs-toggle="tab" data-bs-target="#support"
@@ -512,7 +512,7 @@ class WordClever_MetaBox
                 </div>
             </div>
             <div class="wordclever-template-content-box d-flex tab-content" style="justify-content:start;" id="nav-tabContent">
-                <div class="tab-pane fade active show row  pt-xxl-5 pt-5 mt-5 mt-xxl-5" id="dashboard" role="tabpanel"
+                <div class="tab-pane fade row  pt-xxl-5 pt-5 mt-5 mt-xxl-5" id="dashboard" role="tabpanel"
                     aria-labelledby="dashboard-tab">
                     <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
                         <div class="wordclever-login-registration-wrap">
@@ -740,7 +740,7 @@ class WordClever_MetaBox
                         <?php require WORDCLEVER_PATH . 'includes/bundle-banner-template.php'; ?>
                     </div>
                 </div>
-                <div class="tab-pane fade pt-xxl-5 pt-5 mt-5 mt-xxl-5" id="templates" role="tabpanel"
+                <div class="tab-pane fade active show pt-xxl-5 pt-5 mt-5 mt-xxl-5" id="templates" role="tabpanel"
                     aria-labelledby="templates-tab">
                     <div class="d-flex">
                         <div class="wordclever-template-sidebar-main-box col-xxl-3 col-xl-4 col-lg-4 col-md-6 pe-4">
@@ -767,12 +767,15 @@ class WordClever_MetaBox
                                 <ul class="wordclever-templates-collections-group">
                                     <?php
                                     $collections_arr = wordclever_get_collections();
+                                    usort($collections_arr, function ($collection_a, $collection_b) {
+                                        return strcasecmp($collection_a->title, $collection_b->title);
+                                    });
                                     foreach ($collections_arr as $collection) {
 
                                         if ($collection->handle != 'free-products' && $collection->handle != 'frontpage' && $collection->handle != 'gutenberg-wordpress-themes') { ?>
                                             <li class="wordclever-collection-name pb-3"
                                                 data-value="<?php echo esc_attr($collection->handle); ?>">
-                                                <?php echo esc_html($collection->title); ?><span
+                                                <?php echo esc_html(ucwords($collection->title)); ?><span
                                                     class="wordclever-collection-count align-self-center"><?php echo esc_html($collection->productsCount); ?></span>
                                             </li>
                                         <?php }

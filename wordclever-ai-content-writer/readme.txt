@@ -1,8 +1,8 @@
 === WordClever - AI Content Writer ===
 Contributors: wpradiant
 Tags: AI-Powered Writing, Content Automation, AI Tool, Product Descriptions
-Tested up to: 6.8
-Stable tag: 1.1.2
+Tested up to: 7.1
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,7 @@ Transform your WooCommerce store with AI-driven content that saves time, improve
 **Technical Specifications**
 
 * **WordPress Version:** 5.2 or higher
-* **Tested Up To:** WordPress 6.8
+* **Tested Up To:** WordPress 7.1
 * **PHP Version:** 7.4 or higher
 
 = Sweetalert2  =
@@ -62,6 +62,9 @@ WordClever AI Content Writer plugin uses external services for user authenticati
 This service is provided by "WP Radiant": [terms of use](https://www.wpradiant.net/pages/wordclever-terms-of-use), [privacy policy](https://www.wpradiant.net/pages/wordclever-privacy-policy).
 
 == Changelog ==
+
+= 1.1.3 - 2026-08-28 =
+* Made the Templates tab load selected by default on the WordClever admin page, and selected automatically when filtering by a theme category, instead of leaving the Dashboard tab active.
 
 = 1.1.2 - 2026-07-16 =
 * Throttled the license and usage sync checks that ran on every wp-admin page load to once every 15 minutes, reducing unnecessary outbound API requests and speeding up admin page loads.
