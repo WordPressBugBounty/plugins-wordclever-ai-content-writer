@@ -2,7 +2,7 @@
 Contributors: wpradiant
 Tags: AI-Powered Writing, Content Automation, AI Tool, Product Descriptions
 Tested up to: 7.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,11 @@ WordClever AI Content Writer plugin uses external services for user authenticati
 This service is provided by "WP Radiant": [terms of use](https://www.wpradiant.net/pages/wordclever-terms-of-use), [privacy policy](https://www.wpradiant.net/pages/wordclever-privacy-policy).
 
 == Changelog ==
+
+= 1.1.4 - 2026-10-05 =
+* Updated the WordPress Theme Bundle banners to show the current bundle (79+ Gutenberg themes, $99).
+* Fixed the "View Documentation" button on the Support tab, which linked to a page that no longer exists (404).
+* Fixed the Help page layout: admin notices from themes and other plugins were being moved inside the Help box, breaking its layout.
 
 = 1.1.3 - 2026-08-28 =
 * Made the Templates tab load selected by default on the WordClever admin page, and selected automatically when filtering by a theme category, instead of leaving the Dashboard tab active.

@@ -12,7 +12,7 @@
 }
 
 .wordclever_page_wordclever-help .notice {
-    display: none;
+    display: none !important;
 }
 
 #toplevel_page_wordclever-templates, #toplevel_page_wordclever-templates .wp-menu-open {

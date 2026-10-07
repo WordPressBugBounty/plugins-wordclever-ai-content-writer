@@ -3,7 +3,7 @@
  * Plugin Name:         WordClever - AI Content Writer
  * Plugin URI:          https://www.wpradiant.net/products/wordclever-pro
  * Description:         WordClever AI Content Writer generates SEO-friendly product descriptions, meta titles, and more for WooCommerce with just a few clicks.
- * Version:             1.1.3
+ * Version:             1.1.4
  * Requires at least:   5.2
  * Requires PHP:        7.4
  * Author:              wpradiant
@@ -42,7 +42,7 @@ class WordClever
 
     private function define_constants()
     {
-        define('WORDCLEVER_VERSION', '1.1.3');
+        define('WORDCLEVER_VERSION', '1.1.4');
         define('WORDCLEVER_PATH', plugin_dir_path(__FILE__));
         define('WORDCLEVER_URL', plugin_dir_url(__FILE__));
     }
@@ -78,7 +78,7 @@ function wordclever_upsell_banner_func()
                 </div>
                 <div class="wordclever-banner-content">
                     <h2><?php echo esc_html('WordPress Theme Bundle'); ?></h2>
-                    <p><?php echo esc_html('Get Access to 72+ Gutenberg WordPress Themes for almost all business Niche'); ?>
+                    <p><?php echo esc_html('Get Access to 79+ Gutenberg WordPress Themes for almost all business Niche'); ?>
                     </p>
                 </div>
                 <div class="wordclever-banner-btn-content">
@@ -87,7 +87,7 @@ function wordclever_upsell_banner_func()
                         <h4><?php echo esc_html('15%'); ?></h4>
                     </div>
                     <a href="<?php echo esc_attr(WORDCLEVER_MAIN_URL . '/products/wordpress-theme-bundle'); ?>"
-                        target="_blank" class="wordclever-bundlle-btn"><?php echo esc_html('Buy Bundle at $79'); ?></a>
+                        target="_blank" class="wordclever-bundlle-btn"><?php echo esc_html('Buy Bundle at $99'); ?></a>
                 </div>
             </div>
         </div>

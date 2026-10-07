@@ -444,7 +444,9 @@ class WordClever_MetaBox
     public static function render_help_page()
     {
         ?>
-        <div id="wordclever-help" class="wrap">
+        <div class="wrap">
+        <hr class="wp-header-end">
+        <div id="wordclever-help">
             <h1><?php esc_html_e('WordClever Help', 'wordclever-ai-content-writer'); ?></h1>
             <p><?php esc_html_e('Welcome to WordClever AI Content Writer!', 'wordclever-ai-content-writer'); ?></p>
             <p><?php esc_html_e('Here’s how to use the plugin:', 'wordclever-ai-content-writer'); ?></p>
@@ -461,6 +463,7 @@ class WordClever_MetaBox
             </p>
             <p><?php esc_html_e('For more details, check our documentation or contact support.', 'wordclever-ai-content-writer'); ?>
             </p>
+        </div>
         </div>
         <?php
     }
@@ -752,11 +755,11 @@ class WordClever_MetaBox
                                         <?php echo esc_attr('WordPress Theme Bundle'); ?>
                                     </div>
                                     <p class="wordclever-template-banner-para">
-                                        <?php echo esc_attr('Get Access to 72+ Gutenberg WordPress Themes for almost all business Niche'); ?>
+                                        <?php echo esc_attr('Get Access to 79+ Gutenberg WordPress Themes for almost all business Niche'); ?>
                                     </p>
                                     <a class="wordclever-bundle-buy-now wordclever-bundle-btn mt-2"
                                         href="<?php echo esc_url(WORDCLEVER_MAIN_URL . '/products/wordpress-theme-bundle'); ?>"
-                                        target="_blank"><?php echo esc_html('Buy Bundle at $79'); ?></a>
+                                        target="_blank"><?php echo esc_html('Buy Bundle at $99'); ?></a>
                                 </div>
                             </div>
                             <div class="wordclever-filter-categories-wrapper position-relative">
@@ -872,7 +875,7 @@ class WordClever_MetaBox
                                     <h4><?php echo esc_html('Documentation'); ?></h4>
                                     <p><?php echo esc_html("Access our detailed guides and tutorials to help you set up and make the most of WordClever. From installation to advanced features, we've got you covered."); ?>
                                     </p>
-                                    <a href="<?php echo esc_attr(WORDCLEVER_PREVIEW_URL . '/tutorial/wordclever-documentation'); ?>"
+                                    <a href="<?php echo esc_url('https://wordpress.org/plugins/wordclever-ai-content-writer/#installation'); ?>"
                                         target="_blank"
                                         class="wordclever-support-btn"><?php echo esc_html('View Documentation'); ?></a>
                                 </div>
