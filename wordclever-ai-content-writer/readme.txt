@@ -2,7 +2,7 @@
 Contributors: wpradiant
 Tags: AI-Powered Writing, Content Automation, AI Tool, Product Descriptions
 Tested up to: 7.1
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,12 @@ WordClever AI Content Writer plugin uses external services for user authenticati
 This service is provided by "WP Radiant": [terms of use](https://www.wpradiant.net/pages/wordclever-terms-of-use), [privacy policy](https://www.wpradiant.net/pages/wordclever-privacy-policy).
 
 == Changelog ==
+
+= 1.1.5 - 2026-11-12 =
+* Updated theme bundle count to 80+ Gutenberg WordPress themes.
+* Updated the theme bundle discount to 25% in the admin notice and the bundle banner.
+* Closing the theme bundle banner is now remembered for 7 days instead of reappearing on every page load.
+* Theme bundle banner is now shown only to administrators.
 
 = 1.1.4 - 2026-10-05 =
 * Updated the WordPress Theme Bundle banners to show the current bundle (79+ Gutenberg themes, $99).

@@ -755,7 +755,7 @@ class WordClever_MetaBox
                                         <?php echo esc_attr('WordPress Theme Bundle'); ?>
                                     </div>
                                     <p class="wordclever-template-banner-para">
-                                        <?php echo esc_attr('Get Access to 79+ Gutenberg WordPress Themes for almost all business Niche'); ?>
+                                        <?php echo esc_attr('Get Access to 80+ Gutenberg WordPress Themes for almost all business Niche'); ?>
                                     </p>
                                     <a class="wordclever-bundle-buy-now wordclever-bundle-btn mt-2"
                                         href="<?php echo esc_url(WORDCLEVER_MAIN_URL . '/products/wordpress-theme-bundle'); ?>"
