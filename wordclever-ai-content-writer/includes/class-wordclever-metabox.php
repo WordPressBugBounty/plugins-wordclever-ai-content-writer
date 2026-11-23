@@ -23,6 +23,26 @@ class WordClever_MetaBox
         add_action('wp_ajax_wordclever_reset_auth_pass', [__CLASS__, 'handle_reset_auth_pass']);
     }
 
+    /**
+     * Stop the request unless the current user has the given capability.
+     * Every AJAX action below changes site-wide WordClever settings or uses the
+     * site's AI credits, so a valid nonce alone is not enough.
+     */
+    private static function require_capability($capability)
+    {
+        if (!current_user_can($capability)) {
+            wp_send_json_error(['message' => __('You do not have permission to do this.', 'wordclever-ai-content-writer')], 403);
+        }
+    }
+
+    /**
+     * Users allowed to generate content from the product editor.
+     */
+    private static function can_generate_content()
+    {
+        return current_user_can('manage_options') || current_user_can('edit_products');
+    }
+
     public static function add_metabox()
     {
         add_meta_box(
@@ -39,6 +59,9 @@ class WordClever_MetaBox
     public static function wordclever_get_used_request()
     {
         check_ajax_referer('wordclever_nonce', 'security');
+        if (!self::can_generate_content()) {
+            wp_send_json_error(['message' => __('You do not have permission to do this.', 'wordclever-ai-content-writer')], 403);
+        }
 
         $current_user = get_option('wordclever_current_user');
         if (empty($current_user)) {
@@ -266,7 +289,8 @@ class WordClever_MetaBox
 
         wp_localize_script('wordclever-admin-script', 'wordclever_data', [
             'ajax_url' => admin_url('admin-ajax.php'),
-            'nonce' => wp_create_nonce('wordclever_nonce'),
+            // Only users who may use WordClever get a working nonce.
+            'nonce' => (self::can_generate_content() || current_user_can('install_plugins')) ? wp_create_nonce('wordclever_nonce') : '',
             'site_url' => get_site_url(),
             'redirect_url' => admin_url('admin.php?page=wordclever-templates')
         ]);
@@ -276,6 +300,9 @@ class WordClever_MetaBox
     public static function generate_content()
     {
         check_ajax_referer('wordclever_nonce', 'security');
+        if (!self::can_generate_content()) {
+            wp_send_json_error(['message' => __('You do not have permission to do this.', 'wordclever-ai-content-writer')], 403);
+        }
 
         $current_user = get_option('wordclever_current_user');
         if (empty($current_user)) {
@@ -316,6 +343,7 @@ class WordClever_MetaBox
     public static function handle_reset_auth_pass()
     {
         check_ajax_referer('wordclever_reset_pass_nonce', 'security');
+        self::require_capability('manage_options');
 
         $email_id = sanitize_text_field(wp_unslash($_POST['email_id'] ?? ''));
         $newpassword = sanitize_text_field(wp_unslash($_POST['newpassword'] ?? ''));
@@ -338,6 +366,7 @@ class WordClever_MetaBox
     public static function handle_auth()
     {
         check_ajax_referer('wordclever_nonce', 'security');
+        self::require_capability('manage_options');
 
         $username = sanitize_text_field(wp_unslash($_POST['username'] ?? ''));
         $password = sanitize_text_field(wp_unslash($_POST['password'] ?? ''));
@@ -368,9 +397,10 @@ class WordClever_MetaBox
     public static function wordclever_support_tab_form()
     {
         check_ajax_referer('wordclever_support_tab_nonce', 'security');
+        self::require_capability('manage_options');
 
         if (isset($_POST['form_data'])) {
-            parse_str($_POST['form_data'], $form_data);
+            parse_str(wp_unslash($_POST['form_data']), $form_data);
 
             $first_name = sanitize_text_field(wp_unslash($form_data['support-first-name'] ?? ''));
             $last_name = sanitize_text_field(wp_unslash($form_data['support-last-name'] ?? ''));
@@ -984,6 +1014,7 @@ class WordClever_MetaBox
     public static function handle_license_verification()
     {
         check_ajax_referer('wordclever_nonce', 'security');
+        self::require_capability('manage_options');
 
         $license_key = sanitize_text_field(wp_unslash($_POST['license_key'] ?? ''));
 

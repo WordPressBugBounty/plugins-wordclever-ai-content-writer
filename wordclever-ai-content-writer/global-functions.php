@@ -159,4 +159,3 @@ function wordclever_get_filtered_products_ajax() {
 }
 
 add_action('wp_ajax_wordclever_get_filtered_products', 'wordclever_get_filtered_products_ajax');
-add_action('wp_ajax_nopriv_wordclever_get_filtered_products', 'wordclever_get_filtered_products_ajax');
